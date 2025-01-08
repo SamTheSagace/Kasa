@@ -1,0 +1,12 @@
+@import "../../main.scss";
+.tags{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .tag{
+        background-color: $Orange;
+        border-radius: 10px;
+        color: white;
+        padding: 0 10px 0 10px;
+    }
+}

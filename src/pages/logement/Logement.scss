@@ -1,0 +1,39 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 100px 0px 100px;
+    gap: 50px;
+    align-items: center;
+    .title-host{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        .host{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .imgHost{
+                width: 64px;
+                height: 64px;
+                overflow: hidden;
+                border-radius: 32px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block
+                }
+            }
+        }
+    }
+    .tags-rates{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    span{
+        height: fit-content;
+    }
+}

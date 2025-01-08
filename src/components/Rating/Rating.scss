@@ -1,0 +1,11 @@
+.rates{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    #rate {
+        color: gold;
+        #base{
+            color: gray;
+        }
+    }
+}
