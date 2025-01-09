@@ -4,8 +4,10 @@ import Carroussel from "../../components/Carroussel/Carroussel";
 import Footer from "../../components/Footer/Footer"
 import Rating from "../../components/Rating/Rating";
 import Tags from "../../components/Tags/Tags";
+import Dropdown from "../../components/Dropdown/Dropdown";
 import './Logement.scss'
 import { useParams } from "react-router";
+
 
 
 function Logement() {
@@ -34,6 +36,10 @@ function Logement() {
       <Rating rate={logement.rating} />
     </div>
     <div className="details"></div>
+    <div className="dropdowns">  
+      <Dropdown titre="Description" text={logement.description} />
+      <Dropdown titre="Équipement" list={logement.equipments}/>    
+    </div>
   </div>
   <Footer />
   </>  

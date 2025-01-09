@@ -36,4 +36,10 @@
     span{
         height: fit-content;
     }
+    .dropdowns {
+        display: flex;
+        justify-content: space-between;
+        gap: 76px;
+        width: 100%;
+    }
 }

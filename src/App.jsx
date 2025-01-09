@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router";
 import Home from "./pages/home/Home";
 import About from "./pages/About/About.jsx"
-import logements from "./data/logements.json"
+// import logements from "./data/logements.json"
 import Logement from "./pages/logement/Logement.jsx"
 
 

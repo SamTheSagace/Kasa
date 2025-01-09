@@ -3,16 +3,19 @@ import { useState } from 'react';
 
 
 
-function Dropdown({titre, texte}){
-    const [isRevealed, setIsRevealed] = useState(false);
+function Dropdown({titre, text, list}){
+    const [isRevealed, setIsRevealed] = useState(true);
     return(
         <>
         <div className='dropdown'>
             <div className='dropdownTitle' onClick={() => setIsRevealed((prev) => !prev)}>
                 <h1>{titre}</h1>
-                <i className="fa-solid fa-angle-up"></i>
+                <i className={isRevealed ?  "fa-solid fa-angle-down" : "fa-solid fa-angle-up"}></i>
             </div>
-            <p {...(isRevealed && { className: "revealed" })}>{texte}</p>   
+            {text && <div className={isRevealed ?  "hidden" : "reveal"}><p>{text}</p></div>}
+            {list && <div className={isRevealed ?  "hidden" : "reveal"}>{list.map((list)=>(
+                <p {...(isRevealed && { className: "revealed" })}key={list}>{list}<br/></p>
+                ))}</div>}  
         </div>
         </>
         

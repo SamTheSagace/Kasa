@@ -21,17 +21,26 @@
         }
     }
     p{
-        // z-index: 1;
-        transition: all .5s ease-in-out;
-        height: 0px;
-        // opacity: 0;
-        // position: absolute; 
-        &.revealed{
-            // position: relative;
-            height: auto;
-            // opacity: 1;
+        margin: 0;
+    }
+    div {
+    transition: max-height 1s ease, transform 1s ease, padding 1s ease;
+    overflow: hidden; /* Hide content that goes outside the height */
+        &.hidden {
+            height: 0; /* Collapse the height */
+            transform: translateY(-100%);
+            padding: 0 20px 0 20px;
+        }
+
+        &.reveal {
+            height: fit-content; /* A large enough value to fit your content */
+            transform: translateY(0);
+            padding: 20px;
+            background-color: #F6F6F673;
         }
     }
+
+    
 }
 
 
