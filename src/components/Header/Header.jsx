@@ -9,10 +9,10 @@ function Header(){
         </NavLink>
         <div className='headerPages'>
             <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>
-                <p>Acceuil</p>
+                <h3>Accueil</h3>
             </NavLink>
             <NavLink to="/about" className={({ isActive }) => (isActive ? "active" : "")}>
-                <p>À propos</p>
+                <h3>À propos</h3>
             </NavLink>
         </div>
         

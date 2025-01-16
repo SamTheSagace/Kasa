@@ -1,9 +1,10 @@
-
+@import "../../main.scss";
 
 .header{
     margin: 0 100px 0 100px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     .logo{
       height: 68px;
       img{
@@ -14,7 +15,11 @@
     }        
     a{
         text-decoration: none;
-        color: black;
+        color: $Black;
+        h3{
+          font-weight: 500;
+          font-size: 24px;
+        }
     }
     .headerPages{
         display: flex;
@@ -24,4 +29,20 @@
             text-decoration: underline
         }
     }
+}
+
+@media (max-width: 376px) {
+  .header{
+    margin: 0 20px 0;
+    .logo{
+      height: 46px;
+    }
+    a{
+      height: fit-content;
+      h3{
+        font-size: 12px;
+      }
+    }
+    
+  }
 }

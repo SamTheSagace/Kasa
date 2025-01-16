@@ -7,39 +7,47 @@ import Tags from "../../components/Tags/Tags";
 import Dropdown from "../../components/Dropdown/Dropdown";
 import './Logement.scss'
 import { useParams } from "react-router";
+import Error404 from "../Error404/Error404";
 
 
 
 function Logement() {
   const {id} = useParams()
   const logement = Logements.find((item) => item.id === id);
-  console.log(id)
+  if(!logement){
+    return(
+      <Error404 />
+    )
+  }
+  // console.log(id)
 
   return(
   <>
   <Header />
   <div className="body">
     <Carroussel imgURL={logement.pictures}/>
-    <div className="title-host"> 
-      <div className="title">
-        <h1>{logement.title}</h1>
-        <p>{logement.location}</p>
+    <div className="cardInfos">
+      <div className="title-tag"> 
+        <div className="title">
+          <h1>{logement.title}</h1>
+          <p>{logement.location}</p>
+        </div>
+        <Tags Tags={logement.tags}/>
       </div>
-      <div className="host">
-        <p>{logement.host.name}</p>
-        <div className="imgHost">
-        <img src={logement.host.picture} alt={logement.host.name} /></div>
+      <div className="host-rates">
+        <div className="host">
+          <p dangerouslySetInnerHTML={{__html:logement.host.name.replace(" ", "<br/>")}}></p>
+          <div className="imgHost">
+          <img src={logement.host.picture} alt={logement.host.name} /></div>
+        </div>
+        <Rating rate={logement.rating} />
       </div>
     </div>
-    <div className="tags-rates">
-      <Tags Tags={logement.tags}/>
-      <Rating rate={logement.rating} />
-    </div>
-    <div className="details"></div>
-    <div className="dropdowns">  
-      <Dropdown titre="Description" text={logement.description} />
-      <Dropdown titre="Équipement" list={logement.equipments}/>    
-    </div>
+      <div className="dropdowns">  
+        <Dropdown titre="Description" text={logement.description} />
+        <Dropdown titre="Équipement" list={logement.equipments}/>    
+      </div>
+    
   </div>
   <Footer />
   </>  

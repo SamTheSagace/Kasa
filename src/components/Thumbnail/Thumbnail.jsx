@@ -6,6 +6,7 @@ function Thumbnail({imgUrl, title, logementId}){
     <NavLink to={`/logements/${logementId}`}> 
         <div className='imgThumbnail'>
             <img src={imgUrl} alt="" />
+            <div className='gradient'></div>
             <p>{title}</p>
         </div>
     </NavLink>

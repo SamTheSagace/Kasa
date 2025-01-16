@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router";
 import Home from "./pages/home/Home";
 import About from "./pages/About/About.jsx"
-// import logements from "./data/logements.json"
+import Error404 from "./pages/Error404/Error404.jsx"
 import Logement from "./pages/logement/Logement.jsx"
 
 
@@ -12,10 +12,7 @@ function App() {
     <Route index element={<Home />} />
     <Route path="about" element={<About />}/>
     <Route path="/logements/:id" element={<Logement />} /> 
-    {/* {logements.map((logement) =>(
-      <Route key={logement.id} path={logement.id} element={<Logement path={logement.id}/>} />
-    ))} */}
-    <Route path="*" element={<div> 404</div>}/>
+    <Route path="*" element={<Error404 />}/>
     </Routes>
   </BrowserRouter>
   )

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="en" data-redeviation-bs-uid="8fyf30x701"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <script type="module" src="./Kasa_files/client"></script>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Kasa_files/css2" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./Kasa_files/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Kasa</title>
+  <style type="text/css" data-vite-dev-id="D:/OneDrive/01_Boulots/1-OpenClassroom/Projet_4/Kasa/src/components/Header/Header.scss">#root {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 0 0;
+  gap: 50px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 100px 0px 100px;
+  gap: 50px;
+}
+
+p {
+  font-family: "Montserrat", serif;
+  margin: 0px;
+  font-weight: 500;
+}
+
+.header {
+  margin: 0 100px 0 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .logo {
+  height: 68px;
+}
+
+.header .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.header a p {
+  font-weight: 500;
+  size: 24px;
+}
+
+.header .headerPages {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.header .headerPages .active {
+  text-decoration: underline;
+}</style><style type="text/css" data-vite-dev-id="D:/OneDrive/01_Boulots/1-OpenClassroom/Projet_4/Kasa/src/pages/home/Home.scss"></style><style type="text/css" data-vite-dev-id="D:/OneDrive/01_Boulots/1-OpenClassroom/Projet_4/Kasa/src/components/ThumbnailGrid/ThumbnailGrid.scss">#root {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 0 0;
+  gap: 50px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 100px 0px 100px;
+  gap: 50px;
+}
+
+p {
+  font-family: "Montserrat", serif;
+  margin: 0px;
+  font-weight: 500;
+}
+
+.thumbnailGrid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  background-color: #F6F6F6;
+  gap: 50px;
+  justify-content: space-between;
+  border-radius: 25px;
+}</style><style type="text/css" data-vite-dev-id="D:/OneDrive/01_Boulots/1-OpenClassroom/Projet_4/Kasa/src/components/Thumbnail/Thumbnail.scss">.imgThumbnail {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+.imgThumbnail img {
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.imgThumbnail p {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  color: white;
+}</style><style type="text/css" data-vite-dev-id="D:/OneDrive/01_Boulots/1-OpenClassroom/Projet_4/Kasa/src/components/Banner/Banner.scss">#root {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 0 0;
+  gap: 50px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 100px 0px 100px;
+  gap: 50px;
+}
+
+p {
+  font-family: "Montserrat", serif;
+  margin: 0px;
+  font-weight: 500;
+}
+
+.banner {
+  max-width: 100%;
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 25px;
+}
+
+.banner img {
+  object-fit: contain;
+  display: block;
+}
+
+.banner .textWrap {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+.banner .textWrap p {
+  color: white;
+  margin: 0px;
+  z-index: 3;
+  font-weight: 700;
+  size: 48px;
+}</style><style type="text/css" data-vite-dev-id="D:/OneDrive/01_Boulots/1-OpenClassroom/Projet_4/Kasa/src/components/Footer/Footer.scss">#root {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 0 0;
+  gap: 50px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 100px 0px 100px;
+  gap: 50px;
+}
+
+p {
+  font-family: "Montserrat", serif;
+  margin: 0px;
+  font-weight: 500;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  height: 210px;
+  width: 100%;
+  gap: 30px;
+}
+
+.footer p {
+  color: white;
+}</style><style type="text/css" data-vite-dev-id="D:/OneDrive/01_Boulots/1-OpenClassroom/Projet_4/Kasa/src/components/Dropdown/Dropdown.scss">#root {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 0 0;
+  gap: 50px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 100px 0px 100px;
+  gap: 50px;
+}
+
+p {
+  font-family: "Montserrat", serif;
+  margin: 0px;
+  font-weight: 500;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.dropdown h1 {
+  margin: 0;
+}
+
+.dropdown .dropdownTitle {
+  z-index: 2;
+  background-color: #FF6060;
+  padding: 0 15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  color: white;
+}
+
+.dropdown .dropdownTitle .fa-solid {
+  height: fit-content;
+}
+
+.dropdown p {
+  margin: 0;
+}
+
+.dropdown div {
+  transition: max-height 1s ease, transform 1s ease, padding 1s ease;
+  overflow: hidden; /* Hide content that goes outside the height */
+}
+
+.dropdown div.hidden {
+  height: 0; /* Collapse the height */
+  transform: translateY(-100%);
+  padding: 0 20px 0 20px;
+}
+
+.dropdown div.reveal {
+  height: fit-content; /* A large enough value to fit your content */
+  transform: translateY(0);
+  padding: 20px;
+  background-color: #F6F6F6;
+}</style><style type="text/css" data-vite-dev-id="D:/OneDrive/01_Boulots/1-OpenClassroom/Projet_4/Kasa/src/pages/About/About.scss"></style><style type="text/css" data-vite-dev-id="D:/OneDrive/01_Boulots/1-OpenClassroom/Projet_4/Kasa/src/components/Carroussel/carroussel.scss">.carroussel {
+  width: 100%;
+  height: 415px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.carroussel img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}</style><style type="text/css" data-vite-dev-id="D:/OneDrive/01_Boulots/1-OpenClassroom/Projet_4/Kasa/src/components/Rating/Rating.scss">#root {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 0 0;
+  gap: 50px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 100px 0px 100px;
+  gap: 50px;
+}
+
+p {
+  font-family: "Montserrat", serif;
+  margin: 0px;
+  font-weight: 500;
+}
+
+.rates {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+}
+
+.rates #rate {
+  color: #FF6060;
+}
+
+.rates #base {
+  color: #E3E3E3;
+}</style><style type="text/css" data-vite-dev-id="D:/OneDrive/01_Boulots/1-OpenClassroom/Projet_4/Kasa/src/components/Tags/Tags.scss">#root {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 0 0;
+  gap: 50px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 100px 0px 100px;
+  gap: 50px;
+}
+
+p {
+  font-family: "Montserrat", serif;
+  margin: 0px;
+  font-weight: 500;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tags .tag {
+  background-color: #FF6060;
+  border-radius: 10px;
+  color: white;
+  padding: 0 10px 0 10px;
+}</style><style type="text/css" data-vite-dev-id="D:/OneDrive/01_Boulots/1-OpenClassroom/Projet_4/Kasa/src/pages/logement/Logement.scss">.body .title-host {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.body .title-host .host {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.body .title-host .host .imgHost {
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  border-radius: 32px;
+}
+.body .title-host .host .imgHost img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.body .tags-rates {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.body span {
+  height: fit-content;
+}
+.body .dropdowns {
+  display: flex;
+  justify-content: space-between;
+  gap: 76px;
+  width: 100%;
+}</style><style type="text/css" data-vite-dev-id="D:/OneDrive/01_Boulots/1-OpenClassroom/Projet_4/Kasa/src/main.scss">#root {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 0 0;
+  gap: 50px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 100px 0px 100px;
+  gap: 50px;
+}
+
+p {
+  font-family: "Montserrat", serif;
+  margin: 0px;
+  font-weight: 500;
+}</style><style class="redeviation-bs-style" data-name="content">/*! (c) Philipp Koenig under MS-RSL */
+body>div#redeviation-bs-indicator>div{opacity:0;pointer-events:none}body>#redeviation-bs-overlay.redeviation-bs-visible,body>#redeviation-bs-sidebar.redeviation-bs-visible{opacity:1;pointer-events:auto}body.redeviation-bs-noscroll{overflow:hidden !important}body>div#redeviation-bs-indicator>div{position:absolute;transform:translate3d(-24px, 0, 0);top:0;left:0;width:24px !important;height:100%;background:rgba(0,0,0,0.5);border-radius:0 10px 10px 0;transition:opacity .3s,transform .3s;z-index:2}body>div#redeviation-bs-indicator>div>span{-webkit-mask:no-repeat center/24px;-webkit-mask-image:url(chrome-extension://jdbnofccmhefkmjbkkdkfiicjkgofkdh/img/icon-bookmark.svg);background-color:#ffffff;position:absolute;display:block;top:0;left:0;width:100%;height:100%}body>div#redeviation-bs-indicator[data-pos=right]{left:auto;right:0}body>div#redeviation-bs-indicator[data-pos=right]>div{transform:translate3d(24px, 0, 0);left:auto;right:0;border-radius:10px 0 0 10px}body>div#redeviation-bs-indicator.redeviation-bs-fullHeight>div{border-radius:0}body>div#redeviation-bs-indicator.redeviation-bs-hover>div{transform:translate3d(0, 0, 0);opacity:1}body>div#redeviation-bs-indicator[data-pos=left].redeviation-bs-has-lsb{height:100% !important;top:0 !important}body>div#redeviation-bs-indicator[data-pos=left].redeviation-bs-has-lsb>div{background:rgba(0,0,0,0)}body>div#redeviation-bs-indicator[data-pos=left].redeviation-bs-has-lsb>div>span{-webkit-mask-position-y:20px}body>#redeviation-bs-sidebar{width:300px;max-width:none;height:0;z-index:2147483646;background-color:rgba(0,0,0,0.6) !important;color-scheme:auto !important;speak:none;border:none;display:block !important;transform:translate3d(-300px, 0, 0);transition:width 0s .3s,height 0s .3s,opacity .3s,transform .3s}body>#redeviation-bs-sidebar[data-pos=right]{left:auto;right:0;transform:translate3d(300px, 0, 0)}body>#redeviation-bs-sidebar.redeviation-bs-visible{width:calc(100% + 300px);height:100%;transform:translate3d(0, 0, 0);transition:opacity .3s,transform .3s}body>#redeviation-bs-sidebar.sidepanel{width:100% !important}body>#redeviation-bs-sidebar.redeviation-bs-hideMask{background:none !important}body>#redeviation-bs-sidebar.redeviation-bs-hideMask:not(.redeviation-bs-hover){width:calc(300px + 50px)}body>#redeviation-bs-overlay{width:100%;max-width:none;height:100%;z-index:2147483647;border:none;speak:none;background:rgba(0,0,0,0.5) !important;color-scheme:auto !important;transition:opacity .3s}</style></head>
+  <body style="all: unset">
+    <div id="root"><div class="header"><a aria-current="page" class="logo active" href="http://localhost:5173/" data-discover="true"><img src="./Kasa_files/LOGO.png" alt="logo"></a><div class="headerPages"><a aria-current="page" class="active" href="http://localhost:5173/" data-discover="true"><p>Acceuil</p></a><a class="" href="http://localhost:5173/about" data-discover="true"><p>À propos</p></a></div></div><div class="body"><div class="banner"><div class="textWrap"><p>Chez vous, partout et ailleurs</p></div><img src="./Kasa_files/e270fc8fc902a1eb738458e7b29c1899.jpg" alt=""></div><div class="thumbnailGrid"><a class="" href="http://localhost:5173/logements/c67ab8a7" data-discover="true"><div class="imgThumbnail"><img src="./Kasa_files/accommodation-20-1.jpg" alt=""><p>Appartement cosy</p></div></a><a class="" href="http://localhost:5173/logements/b9123946" data-discover="true"><div class="imgThumbnail"><img src="./Kasa_files/accommodation-1-1.jpg" alt=""><p>Magnifique appartement proche Canal Saint Martin</p></div></a><a class="" href="http://localhost:5173/logements/46d188c5" data-discover="true"><div class="imgThumbnail"><img src="./Kasa_files/accommodation-2-1.jpg" alt=""><p>Studio de charme - Buttes Chaumont</p></div></a><a class="" href="http://localhost:5173/logements/7af00cd6" data-discover="true"><div class="imgThumbnail"><img src="./Kasa_files/accommodation-3-1.jpg" alt=""><p>Nid douillet au coeur du 11ème</p></div></a><a class="" href="http://localhost:5173/logements/0979876d" data-discover="true"><div class="imgThumbnail"><img src="./Kasa_files/accommodation-4-1.jpg" alt=""><p>Appartement de Standing - 10e</p></div></a><a class="" href="http://localhost:5173/logements/f72a452f" data-discover="true"><div class="imgThumbnail"><img src="./Kasa_files/accommodation-5-1.jpg" alt=""><p>Studio d'artiste</p></div></a><a class="" href="http://localhost:5173/logements/b4c67936" data-discover="true"><div class="imgThumbnail"><img src="./Kasa_files/accommodation-6-1.jpg" alt=""><p>Cheap - Studio 18ème</p></div></a><a class="" href="http://localhost:5173/logements/bc6f7112" data-discover="true"><div class="imgThumbnail"><img src="./Kasa_files/accommodation-7-1.jpg" alt=""><p>Superbe appartement proche Tour Eiffel</p></div></a><a class="" href="http://localhost:5173/logements/cb2f9222" data-discover="true"><div class="imgThumbnail"><img src="./Kasa_files/accommodation-8-1.jpg" alt=""><p>Suite familiale</p></div></a><a class="" href="http://localhost:5173/logements/d60ca600" data-discover="true"><div class="imgThumbnail"><img src="./Kasa_files/accommodation-9-1.jpg" alt=""><p>Appartement moderne sur parc</p></div></a><a class="" href="http://localhost:5173/logements/2cf259e1" data-discover="true"><div class="imgThumbnail"><img src="./Kasa_files/accommodation-10-1.jpg" alt=""><p>Charmant Studio Marais</p></div></a><a class="" href="http://localhost:5173/logements/5323c29b" data-discover="true"><div class="imgThumbnail"><img src="./Kasa_files/accommodation-11-3.jpg" alt=""><p>Studio fonctionnel République</p></div></a><a class="" href="http://localhost:5173/logements/af6d2d48" data-discover="true"><div class="imgThumbnail"><img src="./Kasa_files/accommodation-12-1.jpg" alt=""><p>Bungalow dans la forêt</p></div></a><a class="" href="http://localhost:5173/logements/7cbb378e" data-discover="true"><div class="imgThumbnail"><img src="./Kasa_files/accommodation-13-2.jpg" alt=""><p>Grande Maison proche banlieue</p></div></a><a class="" href="http://localhost:5173/logements/ba55a0cc" data-discover="true"><div class="imgThumbnail"><img src="./Kasa_files/accommodation-14-1.jpg" alt=""><p>Maison T5 - Le Vésinet</p></div></a><a class="" href="http://localhost:5173/logements/1e181317" data-discover="true"><div class="imgThumbnail"><img src="./Kasa_files/accommodation-15-1.jpg" alt=""><p>Loft de Luxe à la Défense</p></div></a><a class="" href="http://localhost:5173/logements/1e180563" data-discover="true"><div class="imgThumbnail"><img src="./Kasa_files/accommodation-16-1.jpg" alt=""><p>Charmant apt aux portes de Paris</p></div></a><a class="" href="http://localhost:5173/logements/2139a317" data-discover="true"><div class="imgThumbnail"><img src="./Kasa_files/accommodation-17-1.jpg" alt=""><p>Cheap - Chambre Paris 20</p></div></a><a class="" href="http://localhost:5173/logements/6ff132c6" data-discover="true"><div class="imgThumbnail"><img src="./Kasa_files/accommodation-18-1.jpg" alt=""><p>Charmant studio</p></div></a><a class="" href="http://localhost:5173/logements/cb02d69b" data-discover="true"><div class="imgThumbnail"><img src="./Kasa_files/accommodation-19-1.jpg" alt=""><p>Magnifique appartement Rivoli</p></div></a></div></div><div class="footer"><img src="./Kasa_files/LOGO_BW.png" alt=""><p>© 2020 Kasa. All rights reserved</p></div></div>
+    <script type="module" src="./Kasa_files/main.jsx"></script>
+  
+
+<bookmark-sidebar-cfmocsdb4cf id="redeviation-bs-sidebar" class="notranslate" aria-hidden="true" data-theme="default" data-pos="left"><template shadowrootmode="closed"><iframe style="margin:0;padding: 0;border: none;width: 100%;height: 100%;"></iframe></template></bookmark-sidebar-cfmocsdb4cf><div id="redeviation-bs-indicator" data-theme="default" class="redeviation-bs-fullHeight redeviation-bs-visible" data-pos="left" style="height: 100%; top: 0%;"><div><span></span></div></div></body></html>

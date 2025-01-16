@@ -1,27 +1,26 @@
+@import "../../main.scss";
 .dropdown{
     display: flex;
     flex-direction: column;
     width: 100%;
     position: relative;
     overflow: hidden;
-    h1{
-        margin: 0;
-    }
     .dropdownTitle{
+        cursor: pointer;
         z-index: 2;
-        background-color: #FF6060;
-        padding: 0 15px 0 15px;
+        background-color: $Orange;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-radius: 5px;
+        border-radius: 10px;
         color:white;
+        padding: 10px 15px 10px 15px;
         .fa-solid{
             height: fit-content;
         }
     }
     p{
-        margin: 0;
+        font-weight: 400;
     }
     div {
     transition: max-height 1s ease, transform 1s ease, padding 1s ease;
@@ -36,7 +35,7 @@
             height: fit-content; /* A large enough value to fit your content */
             transform: translateY(0);
             padding: 20px;
-            background-color: #F6F6F673;
+            background-color: $LightGray;
         }
     }
 

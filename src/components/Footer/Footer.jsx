@@ -5,7 +5,7 @@ function Footer () {
         <>
         <div className='footer'>
             <img src="src/assets/LOGO_BW.png" alt="" />
-            <p>© 2020 Kasa. All rights reserved</p>     
+            <h3>© 2020 Kasa. All rights reserved</h3>     
         </div>    
         </>
     )

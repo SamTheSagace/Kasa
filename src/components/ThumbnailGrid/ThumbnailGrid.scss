@@ -1,10 +1,29 @@
+@import "../../main.scss";
 .thumbnailGrid{
     display: flex;
     flex-wrap: wrap;
     padding: 50px;
-    background-color: #F6F6F6;
+    background-color: $LightGray;
     gap: 50px;
     justify-content: space-between;
     border-radius: 25px;
+
 }
 
+@media (max-width: 376px) {
+    .thumbnailGrid{
+        padding: 0;
+        background-color: transparent;
+        @media (max-width: 376px) {
+            a{
+              width: 100%;
+              .imgThumbnail{
+                width: 100%;
+                img{
+                }
+              }
+            }
+            
+          }
+    }
+}

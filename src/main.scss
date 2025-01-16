@@ -3,6 +3,62 @@
     flex-direction: column;
     margin: 50px 0 0 0;
     gap: 50px;
+
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 100px 0px 100px;
+    gap: 50px;
+}
+h1{
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+    margin: 0px;
+    font-size: 48px;
+}
+h2{
+    font-family: "Montserrat", serif;
+    font-weight:700;
+    margin: 0px;
+    font-size: 24px;
+}
+h3{
+    font-family: "Montserrat", serif;
+    font-weight:700;
+    margin: 0px;
+    font-size: 24px;
+}
+p{
+    font-family: "Montserrat", serif;
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
+@media (max-width: 376px) {
+    #root{
+        margin: 20px 0 0 0;
+        gap: 30px;
+        
+    }
+    .body{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 20px 0px 20px;
+        gap: 22px;
+    }
+    
+}
+
+
+
 $Orange : #FF6060;
+$Black : #000000;
+$LightGray : #F6F6F6;
+$Gray : #E3E3E3;
+$Dark : rgb(0, 0, 0, 0.6);
+
+@mixin bg-gradient(){
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 10, 10, 0) 42%, rgba(4, 4, 4, 0.205) 99.99%, rgba(0, 0, 0, 0.5) 100%);
+}
