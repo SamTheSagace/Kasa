@@ -1,0 +1,13 @@
+@import "../../main.scss";
+.rates{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    gap: 10px;
+    #rate {
+        color: $Orange; 
+    }
+    #base{
+        color: $Gray;
+    }
+}

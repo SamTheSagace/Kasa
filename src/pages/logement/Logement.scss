@@ -1,0 +1,121 @@
+@import "../../main.scss";
+.body{
+    gap: 30px;
+    .cardInfos{
+        display: flex;
+        flex-direction: row;
+        align-items: space-between;
+        gap: 20px;
+        .title-tag{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            gap:20px;
+            .title{
+                display: flex;
+                flex-direction: column;
+                gap:10px;
+                h1{
+                    font-size: 36px;
+                    font-weight: 500;
+                    color: $Orange;
+                }
+                p{
+                    height: 25px;
+                }
+            }   
+        }
+        .host-rates{
+            display: flex;
+            flex-direction: column;
+            align-items:end;
+            justify-content: space-between;
+            gap: 20px;      
+            .host{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                p{
+                    color: $Orange;
+                    text-align: end;
+                }
+                .imgHost{
+                    width: 64px;
+                    height: 64px;
+                    overflow: hidden;
+                    border-radius: 32px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: block
+                    }
+                }
+            }
+        }
+        span{
+            height: fit-content;
+        }
+         
+    }
+    .dropdowns {
+        display: flex;
+        justify-content: space-between;
+        gap: 76px;
+        width: 100%;
+        .dropdownTitle{
+        h2{
+            font-weight: 500;
+        }
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    .body{
+        .cardInfos{
+            flex-direction: column;
+            .title-tag{
+                h1{
+                    height: auto;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+            .host-rates{
+                flex-direction: row-reverse;
+                align-items: center;
+                .host{
+                    justify-content: center;
+                    p{
+                        font-size: 12px;
+                    }
+                    .imgHost{
+                        img{
+                        }
+                    }
+                }
+                .rates{
+                    gap: 5px;
+                }
+            }
+            span{
+                i{
+                 font-size: 1.2em;   
+                }
+            }
+             
+        }
+        .dropdowns {
+            flex-direction: column;
+            gap: 20px;
+            .dropdownTitle{
+            h2{
+                font-size: 12px;
+            }
+            }
+        }
+    }
+}

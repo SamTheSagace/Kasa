@@ -1,0 +1,45 @@
+@import "../../main.scss";
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    .dropdownTitle{
+        cursor: pointer;
+        z-index: 2;
+        background-color: $Orange;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+        color:white;
+        padding: 10px 15px 10px 15px;
+        .fa-solid{
+            height: fit-content;
+        }
+    }
+    p{
+        font-weight: 400;
+    }
+    div {
+    transition: max-height 1s ease, transform 1s ease, padding 1s ease;
+    overflow: hidden; /* Hide content that goes outside the height */
+        &.hidden {
+            height: 0; /* Collapse the height */
+            transform: translateY(-100%);
+            padding: 0 20px 0 20px;
+        }
+
+        &.reveal {
+            height: fit-content; /* A large enough value to fit your content */
+            transform: translateY(0);
+            padding: 20px;
+            background-color: $LightGray;
+        }
+    }
+
+    
+}
+
+

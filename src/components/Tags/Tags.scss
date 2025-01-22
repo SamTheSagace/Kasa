@@ -1,0 +1,30 @@
+@import "../../main.scss";
+.tags{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .tag{
+        min-width: 115px;
+        font-family: "Montserrat", serif;
+        font-size: 14px;
+        font-weight: 700;
+        background-color: $Orange;
+        border-radius: 12px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 20px 4px 20px;
+    }
+}
+
+@media (max-width: 376px) {
+    .tags{
+        flex-wrap: wrap;
+        .tag{
+            font-size: 10px;
+            min-width: 85px;
+        }  
+    }
+    
+}

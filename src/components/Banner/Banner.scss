@@ -1,0 +1,42 @@
+@import "../../main.scss";
+.banner {
+    max-width: 100%;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 25px;
+    img{
+        object-fit: contain;
+        display: block;  
+    }
+    .textWrap{        
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $Dark;
+        z-index: 2;
+        h1{
+            margin: 16px;
+            color: white;
+            z-index: 3;
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    .banner{
+        height: 110px;
+        h1{
+            font-size: 24px;
+        }
+    } 
+}
