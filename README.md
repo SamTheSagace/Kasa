@@ -1,1 +1,2 @@
-React website around renting a room
+React website about renting rooms
+
