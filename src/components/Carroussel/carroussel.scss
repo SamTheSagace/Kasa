@@ -16,13 +16,22 @@
         button{
             all: unset;
             cursor: pointer;
+            margin: 20px;
             i{
                 color:white;
                 padding: 10px;
                 font-size: 4em;
             }
         }
-        
+        .numbers{
+            height: 100%;
+            display: flex;
+            align-items: end;
+            p{
+            color: white;
+            margin: 20px;
+            }
+        }
     }
     img{
         height: 100%;
@@ -42,9 +51,14 @@
                     font-size: 2em;
                 }
             }
-            
+            .numbers{
+                display: none;
+            }
         }
         img{
+        }
+        p{
+            display: none;
         }
     }
 }
