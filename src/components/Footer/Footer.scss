@@ -8,6 +8,10 @@
     height: 210px;
     width: 100%;
     gap: 30px;
+    img{
+        width: 122px;
+        object-fit: cover;
+    }
     h3{
         color: white;
         font-weight: 500;

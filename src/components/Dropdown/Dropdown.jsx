@@ -10,7 +10,7 @@ function Dropdown({titre, text, list}){
         <div className='dropdown'>
             <div className='dropdownTitle' onClick={() => setIsRevealed((prev) => !prev)}>
                 <h2>{titre}</h2>
-                <i className={isRevealed ?  "fa-solid fa-angle-down" : "fa-solid fa-angle-up"}></i>
+                <i id={isRevealed ? "hidden" : "reveal" } className="fa-solid fa-angle-up "></i>
             </div>
             {text && <div className={isRevealed ?  "hidden" : "reveal"}><p>{text}</p></div>}
             {list && <div className={isRevealed ?  "hidden" : "reveal"}>{list.map((list)=>(

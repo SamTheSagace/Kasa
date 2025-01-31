@@ -22,8 +22,18 @@
     p{
         font-weight: 400;
     }
+    i{
+        font-size: 2em;
+        transition: transform .5s ease, padding 1s ease;
+        &#hidden{
+            transform: rotate(0);
+        } 
+        &#reveal{
+            transform: rotate(-180deg);
+        }
+    }
     div {
-    transition: max-height 1s ease, transform 1s ease, padding 1s ease;
+    transition: max-height .5s ease, transform .5s ease, padding 1s ease;
     overflow: hidden; /* Hide content that goes outside the height */
         &.hidden {
             height: 0; /* Collapse the height */
