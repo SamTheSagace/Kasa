@@ -11,19 +11,18 @@
 }
 
 @media (max-width: 376px) {
-    .thumbnailGrid{
-        padding: 0;
-        background-color: transparent;
-        @media (max-width: 376px) {
-            a{
-              width: 100%;
-              .imgThumbnail{
-                width: 100%;
-                img{
-                }
-              }
-            }
-            
+  .thumbnailGrid{
+      padding: 0;
+      background-color: transparent;
+      justify-content: center;
+      align-items: center;
+      a{
+        max-width: fit-content;    
+        .imgThumbnail{
+          width: 335px;
+          img{
           }
-    }
+        }
+      }
+  }
 }

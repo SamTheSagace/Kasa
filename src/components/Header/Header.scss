@@ -2,7 +2,6 @@
 
 .header{
     display: flex;
-    width: 1240px;
     justify-content: space-between;
     align-items: center;
     .logo{
@@ -33,7 +32,8 @@
 
 @media (max-width: 376px) {
   .header{
-    margin: 0 20px 0;
+    justify-content: center;
+    gap: 45px;
     .logo{
       height: 46px;
     }
@@ -43,6 +43,10 @@
         font-size: 12px;
       }
     }
-    
+    .headerPages{
+      gap: 26px;
+
+    }
   }
+  
 }
