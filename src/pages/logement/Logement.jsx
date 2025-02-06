@@ -23,8 +23,9 @@ function Logement() {
 
   return(
   <>
-  <Header />
+
   <div className="body">
+  <Header />
     <Carroussel imgURL={logement.pictures}/>
     <div className="cardInfos">
       <div className="title-tag"> 

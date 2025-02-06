@@ -7,8 +7,8 @@ import './About.scss'
 function About(){
     return (
         <>    
-        <Header />
         <div className="body">
+            <Header />
             <Banner text="" imgUrl="src/assets/b9995860bb6384a77ca7dc9bf52da3be.jpg"/>
             <Dropdown titre="Fiabilité" text="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."/>
             <Dropdown titre="Respect" text="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."/>
