@@ -12,7 +12,7 @@
     border-radius: 25px;
     img{
         object-fit: contain;
-        display: block;  
+        max-width: 100%;
     }
     .textWrap{        
         position: absolute;
