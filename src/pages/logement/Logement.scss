@@ -1,4 +1,4 @@
-@import "../../main.scss";
+@use "../../styles/variables" as *;
 .body{
     gap: 30px;
     .cardInfos{
