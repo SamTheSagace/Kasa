@@ -1,5 +1,4 @@
 import Header from "../../components/Header/Header"
-import './home.scss'
 import ThumbnailGrid from "../../components/ThumbnailGrid/ThumbnailGrid"
 import Banner from "../../components/Banner/Banner"
 import Footer from "../../components/Footer/Footer"
