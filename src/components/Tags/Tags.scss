@@ -1,4 +1,4 @@
-@import "../../main.scss";
+@use "../../variable.scss" as *;
 .tags{
     display: flex;
     align-items: center;
